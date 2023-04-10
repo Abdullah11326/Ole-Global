@@ -1,0 +1,60 @@
+.communicationMain {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  align-items: center;
+  background: #e6fdff;
+  padding: 0px 150px;
+  margin-bottom: 80px;
+}
+.commImage {
+  width: 89%;
+}
+.paracomone {
+  color: #000000;
+  font-family: 'Poppins', Sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-text-stroke-color: #000;
+  stroke: #000;
+}
+.communicationParas {
+  text-align: center;
+}
+.paracomtwo {
+  color: #000000;
+  font-family: 'Poppins', Sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paraThree {
+  font-size: 22px;
+}
+.communicationImage {
+  flex-grow: 1;
+  width: 50%;
+}
+.communicationParas {
+  flex-grow: 1;
+  width: 50%;
+}
+.parafour {
+  font-size: 18px;
+  line-height: 30px;
+}
+@media screen and (max-width: 800px) {
+  .communicationImage {
+    display: none;
+  }
+  .communicationParas {
+    width: 100%;
+  }
+  .communicationMain {
+    padding: 0px 50px;
+  }
+}

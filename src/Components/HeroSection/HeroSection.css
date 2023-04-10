@@ -1,0 +1,163 @@
+.heroImageBG {
+  /* width: 100%; */
+  margin-bottom: 80px;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://www.oleglobal.app/wp-content/uploads/2022/05/background.png');
+}
+.herosectionMaintwo {
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.heroMain {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  /* align-content: last baseline; */
+  margin: auto;
+}
+.heroText {
+  flex-grow: 0.5;
+  width: 50%;
+}
+.heroHeading {
+  font-family: 'Poppins', Sans-serif;
+  font-size: 55.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 20px;
+}
+.heroHeader {
+  color: #000000;
+  /* font-family: "Poppins", Sans-serif; */
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 80px;
+}
+.heroImage {
+  flex-grow: 0.5;
+  width: 50%;
+  position: relative;
+}
+.bubble1{
+  /* width: 10%; */
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  /* background-color: blue; */
+  animation: moveBubble 2s linear infinite;
+}
+.bubble2{
+  position: absolute;
+  top: calc(100% + 100px);
+  left: 60%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  /* background-color: blue; */
+  animation: moveBubble 3s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+}
+.bubble2{
+  position: absolute;
+  top: calc(100% + 50px);
+  left:40%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  /* background-color: blue; */
+  animation: moveBubble 3s linear infinite;
+}
+.bubble5{
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 68%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  /* background-color: blue; */
+  animation: moveBubble 2s linear infinite;
+}
+.bubble3{
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 54%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  /* background-color: blue; */
+  animation: moveBubble 4s linear infinite;
+}
+.bubble6{
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 75%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  /* background-color: blue; */
+  animation: moveBubble 4s linear infinite;
+}
+.bubble4{
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 60%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  /* background-color: blue; */
+  animation: moveBubble 3s linear infinite;
+}
+.heroimage {
+  width: 89%;
+  position: relative;
+  top: 0;
+  animation: moveImage 1.5s ease-in-out infinite alternate;
+  margin-left: 10px;
+}
+
+@keyframes moveBubble {
+  0% {
+    top: calc(10% + 50px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: -50px;
+    opacity: 0;
+  }
+}
+@keyframes moveImage {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(15px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .heroMain {
+    width: 100%;
+  }
+  .heroImage {
+    display: none;
+  }
+  .heroHeading {
+    font-family: 'Poppins', Sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 20px;
+  }
+  .heroHeader {
+    font-size: 18px;
+  }
+
+  .heroText {
+    text-align: center;
+  }
+}

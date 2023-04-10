@@ -1,0 +1,99 @@
+.navMain {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+  margin: auto;
+  /* overflow-x: hidden; */
+  margin-bottom: 130px;
+}
+.linksList {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0px 10px;
+}
+.logo {
+  flex-grow: 1;
+}
+.logoImage {
+  width: 57px;
+}
+.linksmain {
+  flex-grow: 0.5;
+  padding: 15px 10px;
+}
+.NavAnchors {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight:700;
+}
+.NavAnchors:hover {
+  color: #3ad1e4;
+  cursor: pointer;
+}
+.navButton {
+  padding: 12px 30px;
+  text-decoration: none;
+  background-color: #3ad1e4;
+  font-weight: 600;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.burgerlist {
+  display: none;
+  pointer-events: none;
+}
+.iconWidth{
+  font-size: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .linksmain {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    pointer-events: all;
+    padding:5px 0px;
+    position: relative;
+  }
+  .adjDisplay {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 80px;
+    margin: auto;
+    text-align: center;
+  }
+  .bgrLinks {
+    margin-bottom: 10px;
+  }
+  .bgrLinks1 {
+    margin-top: 5px;
+  }
+
+  .burgerlist {
+    display: flex;
+    pointer-events: all;
+    background-color: white;
+    width: 100%;
+  }
+}

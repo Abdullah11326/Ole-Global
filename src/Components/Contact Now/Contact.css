@@ -1,0 +1,55 @@
+.contactMain {
+  width: 100%;
+  margin-top: 10px;
+  height: 65vh;
+  background-color: #e6fdff;
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  padding: 0px 150px;
+  align-items: center;
+}
+.contactParas {
+  flex-grow: 1;
+  width: 50%;
+  text-align: left;
+}
+.contactImage {
+  flex-grow: 1;
+  width: 50%;
+  text-align: center;
+}
+.contactimage {
+  width: 70%;
+}
+.cnpara1 {
+  color: #333333;
+  font-family: 'Poppins', Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.cnpara2 {
+  color: #3ad1e4;
+  font-family: 'Poppins', Sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+}
+.cnpara3 {
+  font-size: 18px;
+  line-height: 30px;
+  width: 90%;
+}
+.emailtext {
+  font-family: 'Poppins', Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+@media screen and (max-width: 1000px) {
+  .contactImage {
+    display: none;
+  }
+  .contactMain {
+    padding: 0 50px;
+  }
+}
